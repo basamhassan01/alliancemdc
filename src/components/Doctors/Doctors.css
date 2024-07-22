@@ -1,0 +1,139 @@
+
+
+.doctors {
+    padding: 50px 100px;
+}
+
+.doctors .doctors-title p {
+    font-family: var(--main-font);
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.doctors .doctors-title h2 {
+    margin-bottom: 10px;
+    font-family: var(--single-text);
+    color: var(--sub-main-color);
+}
+
+.doctors .doctors-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2%;
+}
+
+.doctors .doctors-container .doctors-card {
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 32%;
+    border: 1px solid var(--sub-main-color);
+}
+
+.doctors .doctors-container .doctors-card .doctors-image {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.doctors .doctors-container .doctors-card .doctors-image img {
+    width: 100%;
+    height: auto;
+}
+
+.doctors .doctors-container .doctors-card .doctors-image .icons {
+    position: absolute;
+    margin-bottom: 0px;
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    bottom: 0;
+}
+
+.doctors .doctors-container .doctors-card .doctors-image .icons .icon {
+    color: var(--sub-main-color);
+    font-size: 16px;
+}
+
+.doctors .doctors-container .doctors-card .doctors-image .icons .icon:hover {
+    color: var(--main-color);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.doctors .doctors-container .doctors-card .doctors-content {
+    margin-top: 0;
+    padding: 10px 5px;
+}
+
+.doctors .doctors-container .doctors-card .doctors-content  h3 {
+    margin-bottom: 2px;
+    font-family: var(--single-text);
+}
+
+.doctors .doctors-container .doctors-card .doctors-content h4 {
+    margin-bottom: 5px;
+    font-family: var(--single-text);
+    color: var(--sub-main-color);
+}
+
+.doctors .doctors-container .doctors-card .doctors-content p {
+    font-family: var(--main-font);
+    font-weight: 300;
+}
+
+/* -- Responsice Source Code -- */
+@media only screen and (max-width: 1000px) {
+    .doctors {
+        padding: 40px 50px;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .doctors {
+        padding: 30px 30px;
+    }
+
+    .doctors .doctors-title p {
+        font-size: 14px;
+    }
+
+    .doctors .doctors-container .doctors-card {
+        width: 49%;
+    }
+
+    .doctors .doctors-container .doctors-card .doctors-content p {
+        font-size: 14px;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .doctors {
+        padding: 25px 15px;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .doctors {
+        padding: 20px 5px;
+    }
+}
+
+
+@media only screen and (max-width: 400px) {
+    .doctors {
+        padding: 10px 5px ;
+    }
+
+    .doctors .doctors-container .doctors-card {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+}

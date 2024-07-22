@@ -1,0 +1,242 @@
+.factors {
+    padding: 130px 100px 20px;
+}
+
+.factors .factors-title-section {
+    margin-bottom: 30px;
+}
+
+.factors .factors-title-section.none {
+    display: none;
+}
+
+.factors .factors-title-section h2 {
+    margin-bottom: 10px;
+    font-family: var(--single-text);
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--sub-main-color);
+}
+
+.factors .factors-title-section p,
+.factors .factors-container .factors-content .factors-section .factors-description p {
+    font-family: var(--main-font);
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.factors .factors-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.factors .factors-container .factors-image {
+    position: relative;
+    width: 35%;
+    display: flex;
+    justify-content: center;
+}
+
+.factors .factors-container .factors-content {
+    width: 65%;
+}
+
+.factors .factors-container .factors-image img {
+    position: absolute;
+    width: 90%;
+    height: auto;
+    bottom: 0;
+    z-index: 1;
+}
+
+.factors .factors-container .factors-image .image-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    border-top-right-radius: 100%;
+    background-color: var(--sub-main-color);
+}
+
+.factors .factors-container .factors-content {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.factors .factors-container .factors-content .factors-section {
+    display: flex;
+    gap: 30px;
+}
+
+.factors .factors-container .factors-content .factors-section .icon {
+    min-width: 20px;
+    font-size: 20px;
+    color: var(--main-color);
+}
+
+.factors .factors-container .factors-content .factors-section .factors-description {
+    margin-bottom: 20px;
+}
+
+.factors .factors-container .factors-content .factors-section .factors-description h4 {
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: var(--sub-main-color);
+}
+
+
+/* -- Responsice Source Code -- */
+@media only screen and (max-width: 1450px) {
+    .factors {
+        padding: 80px 100px 20px;
+    }
+
+    .factors .factors-container .factors-image img {
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 1350px) {
+    .factors .factors-container .factors-image img {
+        width: 110%;
+    }
+}
+
+
+@media only screen and (max-width: 1250px) {
+    .factors .factors-title-section.responsive {
+        display: none;
+    }
+
+    .factors .factors-title-section.none {
+        display: block;
+        text-align: center;
+    }
+
+    .factors .factors-container .factors-image {
+        width: 40%;
+    }
+
+    .factors .factors-container .factors-image img {
+        width: 90%;
+    }
+
+    .factors .factors-container .factors-content {
+        width: 60%;
+    }
+}
+
+
+@media only screen and (max-width: 1100px) {
+    .factors .factors-container .factors-image img {
+        width: 115%;
+    }
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .factors {
+        padding: 80px 50px 20px;
+    }
+}
+
+
+@media only screen and (max-width: 900px) {
+    .factors .factors-container .factors-image img {
+        width: 125%;
+    }
+}
+
+
+@media only screen and (max-width: 850px) {
+    .factors {
+        padding: 80px 50px 20px 0;
+    }
+
+    .factors .factors-title-section {
+        padding: 0 0 0 50px;
+    }
+
+    .factors .factors-container .factors-image,
+    .factors .factors-container .factors-content {
+        width: 50%;
+    }
+
+    .factors .factors-container .factors-image img {
+        width: 120%;
+    }
+}
+
+
+@media only screen and (max-width: 800px) {
+    .factors .factors-container .factors-image img {
+        width: 128%;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .factors {
+        padding: 50px 30px 20px;
+    }
+
+    .factors .factors-title-section p,
+    .factors .factors-container .factors-content .factors-section .factors-description p {
+        font-family: var(--main-font);
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    .factors .factors-title-section {
+        padding: 0;
+    }
+
+    .factors .factors-container .factors-image,
+    .factors .factors-container .factors-content {
+        width: 100%;
+    }
+
+    .factors .factors-container .factors-image {
+        height: auto;
+    }
+
+    .factors .factors-container .factors-image .image-background {
+        padding: 0 100px;
+        height: 100%;
+    }
+
+    .factors .factors-container .factors-image img {
+        position: relative;
+        height: auto;
+        width: 100%;
+    }
+
+    .factors .factors-container .factors-content {
+        margin-top: 20px;
+        padding-left: 0;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .factors {
+        padding: 30px 15px 10px;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .factors {
+        padding: 30px 5px 10px;
+    }
+
+    .factors .factors-title-section p,
+    .factors .factors-container .factors-content .factors-section .factors-description p {
+        font-family: var(--main-font);
+        font-size: 12px;
+        font-weight: 300;
+    }
+}

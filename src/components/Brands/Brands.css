@@ -1,0 +1,111 @@
+.brands {
+    margin: 50px 100px;
+}
+
+.brands .brands-container {
+    width: 100%;
+    height: auto;
+}
+
+.brands .brands-container .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.brands .brands-container .content h1 {
+    font-family: var(--single-text);
+    color: var(--sub-main-color);
+    font-size: 22px;
+}
+
+.brands .brands-container .content p {
+    margin-top: 10px;
+    font-family: var(--main-font);
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.brands .brands-container .images {
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.brands .brands-container .images img {
+    width: 12.5%;
+    height: 100px;
+    object-fit: contain;
+}
+
+
+/* -- Responsice Source Code -- */
+@media only screen and (max-width: 1300px) {
+    .brands {
+        margin: 40px 50px;
+    }
+}
+
+
+@media only screen and (max-width: 1150px) {
+    .brands {
+        margin: 30px 30px;
+    }
+
+    .brands .brands-container .images img {
+        width: 20%;
+    }
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .brands {
+        margin: 25px 30px;
+    }
+}
+
+
+@media only screen and (max-width: 900px) {
+    .brands {
+        margin: 20px 30px;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .brands {
+        margin: 20px 15px;
+    }
+
+    .brands .brands-container .content h1 {
+        font-size: 18px;
+    }
+
+    .brands .brands-container .content p {
+        margin-top: 5px;
+        font-size: 15px;
+    }
+
+    .brands .brands-container .images img {
+        width: 25%;
+        height: 70px;
+    }
+
+    .brands .brands-container .images img.resize {
+        height: 20px;
+    }
+
+    .brands .brands-container .images img.resizes {
+        height: 28px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .brands {
+        margin: 10px 5px;
+    }
+}

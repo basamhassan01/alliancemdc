@@ -1,0 +1,113 @@
+
+
+.statistics {
+    padding: 50px 100px;
+}
+
+.statistics .statistics-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,  minmax(25%, 1fr));
+}
+
+.statistics .statistics-container .statistics-content {
+    margin-right: 10px;
+    border: 2px solid var(--sub-main-color);
+    text-align: center;
+    padding: 40px;
+}
+
+.statistics .statistics-container .statistics-content:last-child {
+    margin-right: 0;
+}
+
+.statistics .statistics-container .statistics-content .icon {
+    padding-bottom: 30px;
+    font-size: 50px;
+    color: var(--main-color);
+}
+
+.statistics .statistics-container .statistics-content h3 {
+    font-family: var(--single-text);
+    font-size: 50px;
+    font-weight: 900;
+    color: var(--sub-main-color);
+}
+
+.statistics .statistics-container .statistics-content p {
+    font-family: var(--main-font);
+    font-size: 18px;
+    font-weight: 500;
+    color: lightslategray;
+}
+
+
+/* -- Responsice Source Code -- */
+@media only screen and (max-width: 1200px) {
+    .statistics .statistics-container .statistics-content .icon {
+        padding-bottom: 20px;
+        font-size: 40px;
+    }
+
+    .statistics .statistics-container .statistics-content h3 {
+        font-size: 40px;
+    }
+
+    .statistics .statistics-container .statistics-content p {
+        font-size: 13px;
+    }
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .statistics {
+        padding: 30px 50px;
+    }
+}
+
+
+@media only screen and (max-width: 850px) {
+    .statistics .statistics-container {
+        grid-template-columns: repeat(auto-fit,  minmax(50%, 1fr));
+    }
+
+    .statistics .statistics-container .statistics-content {
+        margin: 0 0 10px 0;
+        padding: 30px;
+    }
+
+    .statistics .statistics-container .statistics-content:nth-child(even) {
+        margin: 0 0 10px 10px;
+    }
+
+    .statistics .statistics-container .statistics-content p {
+        font-size: 16px;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .statistics {
+        padding: 30px 30px;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .statistics {
+        padding: 30px 15px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .statistics {
+        padding: 20px 5px;
+    }
+
+    .statistics .statistics-container {
+        grid-template-columns: repeat(auto-fit,  minmax(100%, 1fr));
+    }
+
+    .statistics .statistics-container .statistics-content:nth-child(even) {
+        margin: 0 0 10px 0;
+    }
+}

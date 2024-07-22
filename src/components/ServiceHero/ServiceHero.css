@@ -1,0 +1,177 @@
+
+
+.service-hero {
+    padding: 50px 100px 10px;
+}
+
+.service-hero .service-hero-title {
+    margin-bottom: 50px;
+}
+
+.service-hero .service-hero-title h3 {
+    font-family: var(--single-text);
+    font-size: 22px;
+    color: var(--sub-main-color);
+}
+
+.service-hero .service-hero-title .underline {
+    margin: 15px 0 25px;
+    width: 45%;
+    height: 5px;
+    background-color: var(--main-color);
+}
+
+.service-hero .service-hero-title p {
+    font-family: var(--main-font);
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.service-hero .service-hero-container {
+    margin: 20px 0;
+}
+
+.service-hero .service-hero-container .service-hero-card {
+    margin-bottom: 40px;
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    background: #F7F7FB;
+}
+
+.service-hero .service-hero-container .service-hero-card .image {
+    height: auto;
+    flex: 1;
+}
+
+.service-hero .service-hero-container .service-hero-card .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.service-hero .service-hero-container .service-hero-card .content {
+    padding-left: 30px;
+    height: 100%;
+    display: flex;
+    flex: 3;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.service-hero .service-hero-container .service-hero-card .content h4 {
+    font-family: var(--single-text);
+    font-size: 20px;
+    color: var(--sub-main-color);
+}
+
+.service-hero .service-hero-container .service-hero-card .content .line {
+    margin: 15px 0 25px;
+    width: 15%;
+    height: 5px;
+    background-color: var(--main-color);
+}
+
+.service-hero .service-hero-container .service-hero-card .content p {
+    margin-bottom: 20px;
+    font-family: var(--main-font);
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.service-hero .service-hero-container .service-hero-card .content p strong {
+    font-family: var(--single-text);
+    color: var(--sub-main-color);
+}
+
+.service-hero .service-hero-container .service-hero-card .content span {
+    display: flex;
+    align-items: center;
+    font-family: var(--single-text);
+    font-weight: bold;
+    font-size: 14px;
+    color: var(--sub-main-color);
+}
+
+.service-hero .service-hero-container .service-hero-card .content span.last {
+    margin-bottom: 20px;
+}
+
+.service-hero .service-hero-container .service-hero-card .content span .icon {
+    margin-right: 10px;
+    font-size: 8px;
+    color: var(--main-color);
+}
+
+
+/* -- Responsice Source Code -- */
+@media only screen and (max-width: 1000px) {
+    .service-hero {
+        padding: 50px 50px 10px;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .service-hero {
+        padding: 30px 30px 10px;
+    }
+
+    .service-hero .service-hero-title p,
+    .service-hero .service-hero-container .service-hero-card .content p {
+        font-size: 14px;
+    }
+
+    .service-hero .service-hero-title.bottom {
+        margin-bottom: 10px;
+    }
+
+    .service-hero .service-hero-container .service-hero-card {
+        margin-bottom: 30px;
+    }
+
+    .service-hero .service-hero-container .service-hero-card .image {
+        flex: 2;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .service-hero {
+        padding: 20px 15px 10px;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .service-hero {
+        padding: 15px 5px 5px;
+    }
+
+    .service-hero .service-hero-title {
+        margin-bottom: 30px;
+    }
+
+    .service-hero .service-hero-title.bottom {
+        margin-bottom: 5px;
+    }
+
+    .service-hero .service-hero-title h3 {
+        font-size: 20px;
+    }
+
+    .service-hero .service-hero-title p {
+        font-size: 14px;
+    }
+
+    .service-hero .service-hero-container .service-hero-card {
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .service-hero .service-hero-container .service-hero-card .content {
+        padding-top: 20px;
+        padding-left: 0;
+    }
+}
